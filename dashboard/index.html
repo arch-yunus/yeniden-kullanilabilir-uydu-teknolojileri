@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeniden Kullanılabilir Uydu Teknolojileri | Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="VLEO, Reusability ve OSAM teknolojileri üzerine kapsamlı akademik müfredat ve mühendislik portalı.">
+</head>
+<body>
+    <div class="bg-glow">
+        <div class="glow-orb"></div>
+        <div class="glow-orb-2"></div>
+    </div>
+
+    <header>
+        <div class="logo">REUSABLE_SAT</div>
+        <nav>
+            <ul>
+                <li><a href="#about">Kapsam</a></li>
+                <li><a href="#curriculum">Müfredat</a></li>
+                <li><a href="#tech">Teknoloji</a></li>
+                <li><a href="../README.md">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Uzayda Sürdürülebilirlik <br><span>Mühendisliği</span></h1>
+            <p>VLEO irtifasından yörüngede otonom tamirata kadar, yeni nesil uzay operasyonlarını kapsayan akademik grade müfredat portalı.</p>
+            <div class="hero-btns">
+                <a href="#curriculum" class="btn btn-primary">Müfredatı İncele</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>Stratejik Odak Alanları</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>VLEO Operasyonları</h3>
+                    <p>200-450km irtifada atmosferik sürüklenme yönetimi, ATOX korozyon direnci ve RAM-EP itki sistemleri.</p>
+                </div>
+                <div class="card">
+                    <h3>Yeniden Kullanılabilirlik</h3>
+                    <p>Modüler uydu bus mimarileri, kontrollü re-entry mekanizmaları ve dikey iniş teknolojileri.</p>
+                </div>
+                <div class="card">
+                    <h3>OSAM & Robotik</h3>
+                    <p>Yörüngede otonom servis, robotik yakalama, yakıt ikmali ve modüler parça değişimi protokolleri.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="curriculum">
+            <h2>Müfredat Yol Haritası</h2>
+            <div class="roadmap">
+                <div class="roadmap-item">
+                    <h4>1. Dönem: Temeller</h4>
+                    <p>Atmosferik Sınır Fiziği, Seyreltilmiş Gaz Aerodinamiği, Malzeme Bilimi ve Platform Mimarisi.</p>
+                </div>
+                <div class="roadmap-item">
+                    <h4>2. Dönem: Operasyon</h4>
+                    <p>Otonom Yakınlaşma (RPO), Uzay Robotiği, Yörüngede Müdahale Teknikleri ve Capstone Projesi.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tech">
+            <h2>Kullanılan Teknolojiler</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>NASA GMAT</h3>
+                    <p>Yörünge analizi ve derin uzay görev planlama standardı.</p>
+                </div>
+                <div class="card">
+                    <h3>ROS 2</h3>
+                    <p>Otonom robotik sistemlerin kontrol ve haberleşme iskeleti.</p>
+                </div>
+                <div class="card">
+                    <h3>Python / Orekit</h3>
+                    <p>Hassas uzay dinamiği hesaplamaları ve veri analizi.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Yeniden Kullanılabilir Uydu Teknolojileri | Tüm Hakları Saklıdır.</p>
+        <div class="tech-stack">
+            <span class="tech-tag">UTF-8</span>
+            <span class="tech-tag">VANILLA_JS</span>
+            <span class="tech-tag">GLASSMORPHISM</span>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll implementation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple scroll reveal
+        window.addEventListener('scroll', () => {
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                const cardTop = card.getBoundingClientRect().top;
+                if(cardTop < window.innerHeight - 100) {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
