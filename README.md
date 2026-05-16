@@ -25,9 +25,11 @@ Geleneksel uzay görevleri, uyduların ömrü bittiğinde sistemlerin uzay çöp
 | Klasör / Dosya | Açıklama |
 | :--- | :--- |
 | [**mufredat/**](./mufredat/) | Akademik ders içerikleri, haftalık planlar ve AKTS detayları. |
-| [**scripts/**](./scripts/) | Python tabanlı yörünge mekaniği ve sürüklenme (drag) simülasyonları. |
+| [**scripts/**](./scripts/) | Yörünge mekaniği, ATOX ve yakıt bütçesi simülasyonları. |
 | [**dashboard/**](./dashboard/) | Müfredatı görselleştiren interaktif web arayüzü. |
 | [**TERIMLER.md**](./TERIMLER.md) | Kapsamlı uzay ve havacılık teknik terimler sözlüğü. |
+| [**Vaka Analizleri**](./mufredat/ek/vaka_analizleri.md) | MEV-1, ClearSpace-1 gibi gerçek görev incelemeleri. |
+| [**Sürdürülebilirlik**](./mufredat/ek/surdurulebilirlik_ve_cop.md) | Uzay çöpü yönetimi ve Kessler Sendromu analizi. |
 
 ---
 
