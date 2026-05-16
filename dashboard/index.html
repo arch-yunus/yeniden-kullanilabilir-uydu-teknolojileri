@@ -3,120 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yeniden Kullanılabilir Uydu Teknolojileri | Portal</title>
+    <title>Yeniden Kullanılabilir Uydu Teknolojileri | Mission Control</title>
     <link rel="stylesheet" href="style.css">
     <meta name="description" content="VLEO, Reusability ve OSAM teknolojileri üzerine kapsamlı akademik müfredat ve mühendislik portalı.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="bg-glow">
+    <div class="bg-container">
+        <div class="stars"></div>
         <div class="glow-orb"></div>
         <div class="glow-orb-2"></div>
     </div>
 
     <header>
-        <div class="logo">REUSABLE_SAT</div>
+        <div class="logo">REUSABLE_<span>SAT</span></div>
         <nav>
             <ul>
                 <li><a href="#about">Kapsam</a></li>
                 <li><a href="#curriculum">Müfredat</a></li>
-                <li><a href="#tech">Teknoloji</a></li>
+                <li><a href="#mission-sim">Simülasyon</a></li>
                 <li><a href="../README.md">GitHub</a></li>
             </ul>
         </nav>
+        <div class="status-bar">
+            <span class="status-indicator"></span>
+            SYSTEM_ONLINE
+        </div>
     </header>
 
     <main>
         <section class="hero">
-            <h1>Uzayda Sürdürülebilirlik <br><span>Mühendisliği</span></h1>
-            <p>VLEO irtifasından yörüngede otonom tamirata kadar, yeni nesil uzay operasyonlarını kapsayan akademik grade müfredat portalı.</p>
-            <div class="hero-btns">
-                <a href="#curriculum" class="btn btn-primary">Müfredatı İncele</a>
+            <div class="hero-content">
+                <span class="badge">ACADEMIC GRADE PORTAL</span>
+                <h1>Uzay Operasyonlarında <br><span class="gradient-text">Yeni Nesil Standartlar</span></h1>
+                <p>VLEO irtifasından yörüngede otonom tamirata, geri dönüş fiziğinden robotik müdahaleye kadar kapsamlı mühendislik külliyatı.</p>
+                <div class="hero-btns">
+                    <a href="#curriculum" class="btn btn-primary">Eğitime Başla</a>
+                    <a href="#mission-sim" class="btn btn-secondary">Simülasyonu İzle</a>
+                </div>
             </div>
         </section>
 
         <section id="about">
-            <h2>Stratejik Odak Alanları</h2>
+            <h2 class="section-title">Stratejik Odak Alanları</h2>
             <div class="grid">
-                <div class="card">
+                <div class="card glass">
+                    <div class="card-icon">🛰️</div>
                     <h3>VLEO Operasyonları</h3>
                     <p>200-450km irtifada atmosferik sürüklenme yönetimi, ATOX korozyon direnci ve RAM-EP itki sistemleri.</p>
+                    <div class="card-footer">UYDU-101</div>
                 </div>
-                <div class="card">
+                <div class="card glass">
+                    <div class="card-icon">🛡️</div>
                     <h3>Yeniden Kullanılabilirlik</h3>
-                    <p>Modüler uydu bus mimarileri, kontrollü re-entry mekanizmaları ve dikey iniş teknolojileri.</p>
+                    <p>Modüler uydu bus mimarileri, Sutton-Graves ısı akısı analizi ve dikey iniş kontrol algoritmaları.</p>
+                    <div class="card-footer">UYDU-102</div>
                 </div>
-                <div class="card">
+                <div class="card glass">
+                    <div class="card-icon">🦾</div>
                     <h3>OSAM & Robotik</h3>
-                    <p>Yörüngede otonom servis, robotik yakalama, yakıt ikmali ve modüler parça değişimi protokolleri.</p>
+                    <p>Yörüngede otonom servis, hazırlıksız hedef yakalama (grappling) ve modüler yakıt ikmali protokolleri.</p>
+                    <div class="card-footer">UYDU-201</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mission-sim" class="mission-control glass">
+            <div class="sim-header">
+                <h2>Görev Simülasyon Merkezi</h2>
+                <p>Gerçek zamanlı yörünge ve termal analiz verileri.</p>
+            </div>
+            <div class="sim-display">
+                <div class="sim-visual">
+                    <div class="sat-orbit">
+                        <div class="earth-core"></div>
+                        <div class="sat-path"></div>
+                        <div class="satellite"></div>
+                    </div>
+                </div>
+                <div class="sim-data">
+                    <div class="data-item">
+                        <label>Current Altitude</label>
+                        <span class="value">342.5 km</span>
+                    </div>
+                    <div class="data-item">
+                        <label>Drag Force</label>
+                        <span class="value">0.0042 N</span>
+                    </div>
+                    <div class="data-item">
+                        <label>Heat Flux (Peak)</label>
+                        <span class="value">42.8 W/cm²</span>
+                    </div>
+                    <div class="data-item">
+                        <label>Status</label>
+                        <span class="value status-good">STABLE</span>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="curriculum">
-            <h2>Müfredat Yol Haritası</h2>
-            <div class="roadmap">
-                <div class="roadmap-item">
-                    <h4>1. Dönem: Temeller</h4>
-                    <p>Atmosferik Sınır Fiziği, Seyreltilmiş Gaz Aerodinamiği, Malzeme Bilimi ve Platform Mimarisi.</p>
+            <h2 class="section-title">Akademik Yol Haritası</h2>
+            <div class="roadmap-grid">
+                <div class="roadmap-card">
+                    <div class="step">01</div>
+                    <h4>1. Dönem: Sınır Fiziği</h4>
+                    <p>Karman Hattı ötesi aerodinamik ve malzeme bilimi temelleri.</p>
                 </div>
-                <div class="roadmap-item">
-                    <h4>2. Dönem: Operasyon</h4>
-                    <p>Otonom Yakınlaşma (RPO), Uzay Robotiği, Yörüngede Müdahale Teknikleri ve Capstone Projesi.</p>
+                <div class="roadmap-card">
+                    <div class="step">02</div>
+                    <h4>2. Dönem: Otonom Müdahale</h4>
+                    <p>RPO mekaniği, robotik kol kinematiği ve capstone projeleri.</p>
                 </div>
-                <div class="roadmap-item">
-                    <h4>Ek Modüller: Uzay Etiği</h4>
-                    <p>Vaka Analizleri (MEV-1, OSAM-1), Uzay Çöpü Yönetimi ve Sürdürülebilirlik Stratejileri.</p>
-                </div>
-                <div class="roadmap-item">
-                    <h4>Profesyonel Araçlar</h4>
-                    <p>Tasarım Rehberi (Standartlar), Kaynakça ve Öz Değerlendirme Quizleri.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="simulations">
-            <h2>Görev Kontrol Merkezi</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>Mission Control CLI</h3>
-                    <p>Tüm simülasyon araçlarını tek bir terminal arayüzünden yönetin. <code>scripts/mission_control_cli.py</code></p>
-                </div>
-                <div class="card">
-                    <h3>Tasarım Standartları</h3>
-                    <p>Modüler uydu arayüzleri için mekanik ve elektriksel gereksinimler rehberi.</p>
-                </div>
-                <div class="card">
-                    <h3>Akademik Quiz</h3>
-                    <p>Öğrendiklerinizi test edin; VLEO ve OSAM kavramlarını pekiştiren soru setleri.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="tech">
-            <h2>Kullanılan Teknolojiler</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>NASA GMAT</h3>
-                    <p>Yörünge analizi ve derin uzay görev planlama standardı.</p>
-                </div>
-                <div class="card">
-                    <h3>ROS 2</h3>
-                    <p>Otonom robotik sistemlerin kontrol ve haberleşme iskeleti.</p>
-                </div>
-                <div class="card">
-                    <h3>Python / Orekit</h3>
-                    <p>Hassas uzay dinamiği hesaplamaları ve veri analizi.</p>
+                <div class="roadmap-card">
+                    <div class="step">03</div>
+                    <h4>İleri Modüller: OSAM-1</h4>
+                    <p>NASA standartlarında servis ve montaj vaka analizleri.</p>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Yeniden Kullanılabilir Uydu Teknolojileri | Tüm Hakları Saklıdır.</p>
-        <div class="tech-stack">
-            <span class="tech-tag">UTF-8</span>
-            <span class="tech-tag">VANILLA_JS</span>
-            <span class="tech-tag">GLASSMORPHISM</span>
+        <div class="footer-content">
+            <p>&copy; 2026 Yeniden Kullanılabilir Uydu Teknolojileri | Mission Control Portal</p>
+            <div class="tech-stack">
+                <span class="tech-tag">SUTTON-GRAVES_CORE</span>
+                <span class="tech-tag">OSAM_PROTOCOL_v2</span>
+                <span class="tech-tag">VLEO_DYNAMICS</span>
+            </div>
         </div>
     </footer>
 
@@ -131,17 +146,17 @@
             });
         });
 
-        // Simple scroll reveal
-        window.addEventListener('scroll', () => {
-            const cards = document.querySelectorAll('.card');
-            cards.forEach(card => {
-                const cardTop = card.getBoundingClientRect().top;
-                if(cardTop < window.innerHeight - 100) {
-                    card.style.opacity = '1';
-                    card.style.transform = 'translateY(0)';
-                }
-            });
-        });
+        // Dashboard Animation Logic
+        const satellite = document.querySelector('.satellite');
+        let angle = 0;
+        function animateOrbit() {
+            angle += 0.5;
+            const x = Math.cos(angle * Math.PI / 180) * 80;
+            const y = Math.sin(angle * Math.PI / 180) * 80;
+            satellite.style.transform = `translate(${x}px, ${y}px)`;
+            requestAnimationFrame(animateOrbit);
+        }
+        animateOrbit();
     </script>
 </body>
 </html>
