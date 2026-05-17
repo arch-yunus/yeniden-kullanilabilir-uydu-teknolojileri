@@ -1,19 +1,35 @@
 # 📖 Teknik Terimler Sözlüğü (Glossary)
 
-Bu doküman, müfredatta ve projelerde geçen temel havacılık ve uzay terimlerinin açıklamalarını içerir.
+Bu doküman, "Yeniden Kullanılabilir Uydu Teknolojileri ve Yörüngede Tamirat" programı müfredatında, simülasyonlarında ve tasarım standartlarında geçen ileri düzey havacılık, uzay ve kontrol mühendisliği terimlerinin kapsamlı tanımlarını içerir.
 
-| Terim | Açıklama |
-| :--- | :--- |
-| **VLEO** | *Very Low Earth Orbit*: 200-450 km arası, atmosferik etkilerin hissedildiği yörünge. |
-| **OSAM** | *On-Orbit Servicing, Assembly, and Manufacturing*: Yörüngede servis, montaj ve üretim. |
-| **RPO** | *Rendezvous and Proximity Operations*: İki uzay aracının birbirine güvenli yaklaşma süreci. |
-| **ATOX** | *Atomic Oxygen*: Üst atmosferdeki yüksek enerjili oksijen atomları; malzemelerde korozyona neden olur. |
-| **TPS** | *Thermal Protection System*: Atmosfere giriş sırasında aracı ısıdan koruyan sistem. |
-| **De-orbit** | Uydunun yörüngeden çıkarılarak atmosfere girmesi ve imha edilmesi süreci. |
-| **Bus (Platform)** | Uydunun aviyonik, itki ve güç gibi temel sistemlerini barındıran gövde yapısı. |
-| **Payload (Faydalı Yük)** | Uydunun görevini yerine getiren ana ekipman (kamera, sensör, haberleşme ünitesi). |
-| **Docking** | İki aracın mekanik olarak kilitlenip tek bir yapı haline gelmesi. |
-| **Rarefied Gas** | Moleküller arası mesafenin çok büyük olduğu, süreklilik modelinin geçerli olmadığı gaz hali. |
-| **RAM-EP** | Atmosferdeki seyrek gazı toplayıp elektrikle hızlandırarak itki üreten sistem. |
-| **Ablative Shield** | Isıyı emerek katman katman eriyen/buharlaşan tek kullanımlık ısı kalkanı. |
-| **Lidar** | Lazer ışınları kullanarak mesafe ve şekil algılayan sensör sistemi. |
+---
+
+| Terim (Türkçe / İngilizce) | Kısaltma | Detaylı Akademik ve Teknik Açıklama |
+| :--- | :--- | :--- |
+| **Very Low Earth Orbit** *(Çok Alçak Dünya Yörüngesi)* | **VLEO** | Genellikle **200 km ile 450 km** irtifa aralığını tanımlar. Atmosferik sürüklenme etkilerinin ve atomik oksijen korozyonunun çok yüksek olduğu, ancak yüksek çözünürlüklü gözlem ve düşük gecikmeli haberleşme avantajları sunan dinamik bölge. |
+| **On-Orbit Servicing, Assembly, and Manufacturing** *(Yörüngede Servis, Montaj ve Üretim)* | **OSAM** | Uyduların ömrünü uzatmak için yörüngede otonom yakıt ikmali yapılması, arızalı modüllerin değiştirilmesi, uzayda büyük yapıların robotik olarak birleştirilmesi ve 3D yazıcılarla parça üretilmesini kapsayan teknolojiler bütünü. |
+| **Rendezvous and Proximity Operations** *(Bağıl Yakınlaşma ve Yakın Mesafe Operasyonları)* | **RPO** | İki uzay aracının (servis aracı ve hedef uydu) yörünge mekaniği prensiplerine göre birbirine güvenli bir şekilde yaklaşması, göreceli konumlanması ve kenetlenme öncesi bekleme yörüngelerine girmesi süreci. |
+| **Atomic Oxygen** *(Atomik Oksijen)* | **ATOX** | Güneşten gelen aşırı morötesi (EUV) ışınların üst atmosferdeki çift atomlu oksijen moleküllerini ($O_2$) parçalamasıyla oluşan yüksek enerjili tekil oksijen radikali. VLEO uydularının dış yüzeylerindeki polimerleri ve metalleri hızla oksitleyerek korozyona uğratır. |
+| **Thermal Protection System** *(Isıl Koruma Sistemi)* | **TPS** | Uzay aracını atmosfere geri dönüş (re-entry) sırasında oluşan aşırı aerodinamik sürtünme ısısından (durma noktası sıcaklıkları) koruyan, ablatif (eriyerek koruyan) veya yeniden kullanılabilir seramik karo bazlı yalıtım katmanları. |
+| **Knudsen Number** *(Knudsen Sayısı)* | **Kn** | Akışkanlar mekaniğinde moleküler serbest yol uzunluğunun ($\lambda$) karakteristik fiziksel uzunluğa ($L$) oranı ($Kn = \lambda/L$). Seyreltilmiş gaz rejimlerinin sürekli akıştan serbest moleküler akış rejimine geçişini belirlemek için kullanılır. |
+| **Scale Height** *(Ölçek Yüksekliği)* | **H** | Atmosferik yoğunluğun veya basıncın $e$ kat (yaklaşık %36.8) azalması için gereken dikey irtifa değişimi miktarı. Dünya'nın VLEO irtifası için bu değer yaklaşık **45 km** olarak kabul edilir. |
+| **Stagnation Point** *(Durma Noktası)* | **-** | Atmosfere geri dönen bir aracın en ön ucunda, akışkan hızının sıfıra indiği ve kinetik enerjinin tamamen iç enerjiye (basınç ve sıcaklık) dönüştüğü, Sutton-Graves denklemiyle hesaplanan maksimum ısı akısı noktası. |
+| **eXtensible Transducer Electronic Data Sheet** *(Genişletilebilir Dönüştürücü Elektronik Veri Sayfası)* | **xTEDS** | Modüler uydularda tak-çalıştır (Plug-and-Play) bileşenlerin kendi elektriksel özelliklerini, veri arayüzlerini ve kalibrasyon parametrelerini XML formatında ana uçuş bilgisayarına aktarmasını sağlayan dijital veri belgesi. |
+| **Guidance for Fuel-Optimal Descent** *(Yakıt-Optimal İniş Kılavuzu)* | **G-fold** | Roketlerin dikey iniş yaparken minimum yakıt harcamasını sağlayan yörüngeyi, doğrusal olmayan kontrol ve yönelim sınır şartlarını konveksleştirerek (Convex Optimization) gerçek zamanlı hesaplayan uçuş algoritması. |
+| **Free-Floating Regime** *(Serbest Yüzen Rejim)* | **-** | Uzay robotiğinde, servis uydusunun itki sisteminin (ACS) kapatıldığı durum. Robotik kol hareket ettikçe, açısal momentumun korunumu nedeniyle ana gövde kolun hareketine zıt yönde döner. Sistem non-holonomiktir. |
+| **Free-Flying Regime** *(Serbest Uçan Rejim)* | **-** | Uzay robotiğinde, servis uydusunun yönelim kontrol sisteminin (ACS) sürekli aktif olduğu ve robotik kol hareket ederken ana gövdenin uzaydaki yönelimini sıfır sapma ile sabit tuttuğu rejim. |
+| **Erosion Yield** *(Aşınma Verimi)* | **Ey** | Malzemelerin atomik oksijen bombardımanına maruz kaldığında ne kadar kütle/hacim kaybettiğini ifade eden katsayı ($cm^3/\text{atom}$). Malzemelerin LEO ve VLEO ortamındaki dayanıklılığının temel ölçüsüdür. |
+| **Passive Safety Orbit** *(Pasif Güvenli Yörünge)* | **-** | Yakınlaşma (RPO) operasyonu sırasında servis aracında bir arıza (FDIR tetiklenmesi) oluştuğunda, kontrolsüz bir şekilde hedef uyduya çarpmayı önleyecek şekilde tasarlanmış, doğal yörünge salınımlı serbest yörünge rotası. |
+| **Kessler Syndrome** *(Kessler Sendromu)* | **-** | Alçak Dünya Yörüngesi'ndeki uzay çöpü yoğunluğunun kritik bir eşiği aşarak zincirleme çarpışmalara yol açması ve belirli yörünge yüksekliklerini nesiller boyu tamamen kullanılamaz hale getirmesi riski. |
+| **Hot-Swapping** *(Çalışırken Değiştirme)* | **-** | Uydu platformundaki modüllerin veya aviyonik kartların, ana sistemin gücünü kesmeye veya uçuş yazılımını tamamen kapatmaya gerek kalmadan fiziksel olarak sökülüp yenisiyle değiştirilebilmesi kabiliyeti. |
+| **Guide Rails** *(Kılavuz Kanalları)* | **-** | Robotik kolların yörüngede modül değişimi yaparken mekanik veya hizalama hatalarını tolere etmesi ve modülü yerine tam olarak oturtması için tasarlanan konik veya raylı fiziksel kılavuz yapıları. |
+| **Rarefied Gas Dynamics** *(Seyreltilmiş Gaz Dinamiği)* | **RGD** | Gaz yoğunluğunun çok düşük olduğu, moleküllerin birbirleriyle çarpışma sıklığının yüzeyle çarpışma sıklığından az olduğu ortamlardaki gaz davranışını inceleyen akışkanlar mekaniği dalı. |
+| **Doppler Shift** *(Doppler Kayması)* | **-** | VLEO uydularının çok yüksek hızlarından dolayı yer istasyonu ile haberleşirken sinyal frekansında meydana gelen kayma. İletişim kopmalarını önlemek için alıcı-verici sistemlerde aktif olarak kompanse edilmelidir. |
+| **Propellant Management Device** *(Akışkan Yönetim Cihazı)* | **PMD** | Mikro-yerçekimi ortamında (sıfır yerçekimi) sıvı yakıtların yüzey gerilimi ve kılcallık prensiplerini kullanarak gaz-sıvı ayrışmasını sağlayan, yakıtın tanktan motora sızdırmaz ve kesintisiz aktarılmasını sağlayan mekanik iç yapı. |
+| **Space Plug-and-Play Architecture** *(Uzay Tak-Çalıştır Mimarisi)* | **SPA** | Uydulardaki alt sistemlerin (güç, aviyonik, faydalı yük) standart fiziksel ve yazılımsal arayüzlerle bağlanarak entegrasyon sürelerini minimize etmeyi hedefleyen açık sistem standartları. |
+| **De-orbit** *(Yörüngeden Çıkarma)* | **-** | Görevi biten veya ömrünü tamamlayan bir uydunun hızını düşürerek yörüngesini atmosferin yoğun katmanlarına indirmesi ve kontrollü/kontrolsüz bir şekilde yanarak imha olmasını sağlama süreci. |
+| **Bus** *(Platform)* | **-** | Uydunun faydalı yükünü (payload) taşımak, korumak ve çalıştırmak için gerekli olan aviyonik, güç, itki, ısıl kontrol ve haberleşme gibi temel altyapı sistemlerini barındıran ana gövdesi. |
+| **Payload** *(Faydalı Yük)* | **-** | Uydunun uzaya gönderilme amacını yerine getiren birincil ekipmanlar (örneğin; gözlem kameraları, bilimsel sensörler veya transponder haberleşme antenleri). |
+| **RAM-EP** *(Atmosfer Yutan Elektrikli İtki)* | **RAM-EP** | VLEO irtifasında üst atmosferden toplanan seyrek gaz moleküllerini (özellikle azot ve oksijen) bir hava alığı (intake) ile toplayıp, elektrik enerjisiyle iyonlaştırarak itki üreten ve yakıt taşıma ihtiyacını ortadan kaldıran yeni nesil elektrikli motor teknolojisi. |
+| **Ablative Shield** *(Eriyebilen Isı Kalkanı)* | **-** | Atmosfere giriş sırasında oluşan aşırı ısı enerjisini malzemenin kendisini feda etmesi (erime, buharlaşma ve kömürleşme) yoluyla emen ve uzay aracının iç yapısına ısı geçişini engelleyen tek kullanımlık koruyucu kalkan. |
+| **Lidar** *(Işık Algılama ve Uzaklık Ölçümü)* | **LIDAR** | Lazer ışınları göndererek geri yansıyan ışığın seyahat süresinden hedef cismin mesafesini, bağıl hızını ve 3D geometrik şeklini yüksek çözünürlükle belirleyen aktif optik algılama sistemi. OSAM yakınlaşma operasyonlarında kritiktir. |
