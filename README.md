@@ -1,5 +1,9 @@
 # 🛰️ Yeniden Kullanılabilir Uydu Teknolojileri ve Yörüngede Tamirat Mühendisliği
 
+<p align="center">
+  <img src="assets/banner.png" alt="Reusable Satellite Banner" width="100%">
+</p>
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Academic Grade](https://img.shields.io/badge/Status-Academic--Grade-blue.svg)](#)
 [![Field](https://img.shields.io/badge/Field-Aerospace--Engineering-orange.svg)](#)
